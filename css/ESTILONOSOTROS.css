@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+
+
+body{
+    background-image: url(../imagenes/FONDO\ 3.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*/
+/*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*/
+/*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*/
+/*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*/
+
+.slider{
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.slides{
+    margin-top: -1.5%;
+    width: 800%;
+    display: flex;
+    margin-left: 14%;
+    margin-bottom: 20px;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in;
+    transition: 300ms;
+}
+
+@keyframes cambio{
+    0%   {margin-left: 14%;}
+    20%  {margin-left: 14%;}
+
+    25%  {margin-left: -146%;}
+    45%  {margin-left: -146%;}
+
+    50%  {margin-left: -305.5%;}
+    70%  {margin-left: -305.5%;}
+
+    75%  {margin-left: -466%;}
+    100% {margin-left: -466%;}
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    height: 100%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 45%;
+    height: 96%;
+    size: 100%;
+    border-radius: 20px;
+}
+
+/*css for manual slide navigation*//*css for manual slide navigation*//*css for manual slide navigation*/
+/*css for manual slide navigation*//*css for manual slide navigation*//*css for manual slide navigation*/
+/*css for manual slide navigation*//*css for manual slide navigation*//*css for manual slide navigation*/
+
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #F09C22;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #F09C22;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+/*css para contenedores*//*css para contenedores*//*css para contenedores*//*css para contenedores*//*css para contenedores*//*css para contenedores*//*css para contenedores*/
+/*css para contenedores*//*css para contenedores*//*css para contenedores*//*css para contenedores*//*css para contenedores*//*css para contenedores*//*css para contenedores*/
+/*css para contenedores*//*css para contenedores*//*css para contenedores*//*css para contenedores*//*css para contenedores*//*css para contenedores*//*css para contenedores*/
+
+
+.contenedor-1{
+    background: url(../imagenes/FONDO\ 2.png);
+    margin-top: 0;
+    width: 100%;
+    align-content: center;
+    border-radius: none;
+}
+
+.contenedor-2{
+    background-image: url(../imagenes/FONDO\ 2.png);
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 80px;
+    border-radius: 20px;
+}
+
+.contenedor-3{
+    background-image: url(../imagenes/FONDO\ 2.png);
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-content: center;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.contenedor-4{
+    background-image: url(../imagenes/FONDO\ 2.png);
+    max-width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 50px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.boton-conten{
+    background-color: #101820;
+    position: sticky;
+    top: 0pt;
+    width: 100%;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.boton {
+    margin: 0px 10px;
+    background-color: #101820;
+    color: #DDE3E6;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 500ms ease;
+    z-index: 0;
+    width: 15%;
+    text-decoration: none;
+    border-radius: 10px;
+
+
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        background-color: #DDE3E6;
+        transition: all 500ms ease;
+        z-index: -1;
+    }
+
+}
+
+.boton:hover{
+    -webkit-animation: shadow-pulse 1000ms 1;
+    animation: shadow-pulse 1000ms 1;
+    background-color: #DDE3E6;
+    color: #101820;
+}
+
+.boton icon{
+    margin-right: 20px;
+    color: #DDE3E6;
+}
+
+.boton icon:hover{
+    color: #101820;
+    font-size: 30px;
+}
+
+.anuncio{
+    margin-top: 10px;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.anuncio img{
+    max-height: 100%;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.content-image{
+    margin-top: 20px;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.content-image img{
+    width: 80%;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+hr{
+    margin-top: 50px;
+}
+.parrafo-1{
+    color: #DDE3E6;
+    font-family: 'Teko', sans-serif;
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.pregunta{
+    font-size: 80px;
+    margin-top: 50px;
+    color: #DDE3E6;
+    text-align: center;
+}
+
+.respuesta{
+    font-family: 'Teko', sans-serif;
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 20px;
+    color: #DDE3E6;
+    text-align: justify;
+}

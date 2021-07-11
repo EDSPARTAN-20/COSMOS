@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+    justify-content: center;
+}
+
+body{
+    background-image: url(../imagenes/FONDO\ 3.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: fixed;
+}
+
+form{
+    width: 500px;
+    margin: auto;
+    background: rgba(16,24,32,.9);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+h2{
+    color: #DDE3E6;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+input, textarea{
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    background-color: #DDE3E6;
+    opacity: .9;
+    color: #101820;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#boton{
+    background: #F09C22;
+    color: #101820;
+    padding: 5px;
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#boton:hover{
+    cursor: pointer;
+
+}
+
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+
+
+
+.GRACIAS{
+    text-align: center;
+    color: #101820;
+    font-size: 70px;
+    background-color: #F09C22;
+    margin-top:2%;
+
+
+}

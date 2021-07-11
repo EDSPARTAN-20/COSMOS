@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+
+/*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*/
+/*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*/
+/*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*/
+/*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*/
+
+.slider{
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.slides{
+    margin-top: 1.5%;
+    width: 800%;
+    display: flex;
+    margin-left: 14%;
+    margin-bottom: 20px;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in;
+    transition: 300ms;
+}
+
+@keyframes cambio{
+    0%   {margin-left: 14%;}
+    20%  {margin-left: 14%;}
+
+    25%  {margin-left: -146%;}
+    45%  {margin-left: -146%;}
+
+    50%  {margin-left: -305.5%;}
+    70%  {margin-left: -305.5%;}
+
+    75%  {margin-left: -466%;}
+    100% {margin-left: -466%;}
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    height: 100%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 45%;
+    height: 96%;
+    size: 100%;
+    border-radius: 20px;
+}
+
+/*css for manual slide navigation*//*css for manual slide navigation*//*css for manual slide navigation*/
+/*css for manual slide navigation*//*css for manual slide navigation*//*css for manual slide navigation*/
+/*css for manual slide navigation*//*css for manual slide navigation*//*css for manual slide navigation*/
+
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #F09C22;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #F09C22;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+/*css para navegacion automatica*//*css para navegacion automatica*//*css para navegacion automatica*//*css para navegacion automatica*/
+/*css para navegacion automatica*//*css para navegacion automatica*//*css para navegacion automatica*//*css para navegacion automatica*/
+/*css para navegacion automatica*//*css para navegacion automatica*//*css para navegacion automatica*//*css para navegacion automatica*/
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    margin-top: -40px;
+}
+
+.navigation-auto div{
+    border: 2px solid #F09C22;
+    padding: 8px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #DDE3E6;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #DDE3E6;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #DDE3E6;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #DDE3E6;
+}
+
+
+
+/*css boton naranja circular de inicio*//*css boton naranja circular de inicio*/
+/*css boton naranja circular de inicio*//*css boton naranja circular de inicio*/
+/*css boton naranja circular de inicio*//*css boton naranja circular de inicio*/
+
+.content-circle{
+    margin: 0;
+    position: fixed;
+    bottom: 8%;
+    right: 5%;
+    transition: all 300ms;
+}
+
+.content-circle:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
+
+.boton-circular-inicio{
+    background: none;
+    margin: 0;
+}
+
+.boton-circular-inicio img {
+    width: 130px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+
+/*css para contenedores*//*css para contenedores*//*css para contenedores*//*css para contenedores*/
+/*css para contenedores*//*css para contenedores*//*css para contenedores*//*css para contenedores*/
+/*css para contenedores*//*css para contenedores*//*css para contenedores*//*css para contenedores*/
+
+
+body{
+    background-image: url(../imagenes/FONDO\ 3.png);
+    background-attachment: fixed ;
+    background-position: center center;
+    background-size: cover;
+}
+
+.content-1{ 
+    background-image: url(../imagenes/FONDO\ 2.png);
+    width: 100%;
+    align-content: center;
+    border-radius: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-2{ 
+    background-image: url(../imagenes/FONDO\ 2.png);
+    width: 90%;
+    margin-top: 5vh;
+    margin-left: 5%;
+    align-content: center;
+    padding: 80px;
+    border-radius: 20px;
+}
+
+.content-3{ 
+    background-image: url(../imagenes/FONDO\ 2.png);
+    width: 90%;
+    margin-top: 10vh;
+    margin-left: 5%;
+    align-content: center;
+    padding: 80px;
+    border-radius: 20px;
+}
+
+
+/*css para area de tienda y productos*//*css para area de tienda y productos*//*css para area de tienda y productos*/
+/*css para area de tienda y productos*//*css para area de tienda y productos*//*css para area de tienda y productos*/
+/*css para area de tienda y productos*//*css para area de tienda y productos*//*css para area de tienda y productos*/
+
+
+.content-icon-all{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.content-icon{
+    background-color: #F09C22;
+    width: 370px;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+    margin: 20px;
+    align-content: center;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.content-icon:hover{
+    -webkit-box-shadow:0px 10px 40px -10px #DDE3E6;
+    box-shadow: 0px 10px 40 px -10px #DDE3E6;
+
+}
+
+.content-icon img{
+    width: 100px;
+}
+
+.content-icon h4{
+    margin-top: 20px;
+}
+
+.content-icon p{
+    font-family: 'Teko', sans-serif;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align:justify;
+    font-size: 20px;
+    font-weight: normal;
+    cursor: pointer;
+    color: #101820;
+}
+
+.content-icon p :hover{
+    display: block;
+    cursor: default;
+}
+
+
+/*css footer*//*css footer*//*css footer*//*css footer*//*css footer*//*css footer*//*css footer*/
+/*css footer*//*css footer*//*css footer*//*css footer*//*css footer*//*css footer*//*css footer*/
+/*css footer*//*css footer*//*css footer*//*css footer*//*css footer*//*css footer*//*css footer*/
+
+hr{
+    border-top: 1px solid #DDE3E6;
+    border-bottom: 1px solid #DDE3E6;
+    border-left: none;
+    border-right: none;
+    height: 6px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.parrafo-1{
+    color: #DDE3E6;
+    font-family: 'Teko', sans-serif;
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 5 0px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.producto{
+    font-family: 'Teko', sans-serif;
+    font-size: 35px;
+    margin: auto;
+    margin-top: 25px;
+    max-width: fit-content;
+    text-align: center;
+    color: #101820;
+}
+
+h3{
+    font-size: 40px;
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.TITULO{
+    font-family: 'Teko', sans-serif;
+    margin: auto;
+    max-width: 900px;
+    text-align: center;
+    color: #DDE3E6;
+    font-size: 60px;
+}
+
+
+
+

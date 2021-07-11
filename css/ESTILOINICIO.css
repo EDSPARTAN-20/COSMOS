@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+
+
+body{
+    background-image: url(../imagenes/FONDO\ 4\ -\ Acceso\ directo.lnk);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.boton-conten{
+    margin-top: 20vh;
+    width: 20%;
+    align-content: center;
+    margin-left: 10%;
+}
+
+.boton {
+    margin-bottom: 20px;
+    background-color: #101820;
+    color: #DDE3E6;
+    display: inline-block;
+    font-size: 40px;
+    padding: 10px 0px;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 1s ease;
+    z-index: 0;
+    width: 400px;
+    text-decoration: none;
+    border-radius: 10px;
+    opacity: 1;
+
+
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        background-color: #DDE3E6;
+        transition: all 300ms ease;
+        z-index: -1;
+    }
+
+}
+
+.boton:hover{
+    -webkit-animation: shadow-pulse 1000ms 1;
+    animation: shadow-pulse 1000ms 1;
+    background-color: #DDE3E6;
+    color: #101820;
+}
+
+.boton icon{
+    margin-right: 20px;
+    color: #DDE3E6;
+    font-size: 40px;
+}
+
+.boton icon:hover{
+    color: #101820;
+    font-size: 40px;
+}
+
