@@ -9,6 +9,71 @@
     font-family: 'Teko', sans-serif;
 }
 
+/*css para botones de navegacion*//*css para botones de navegacion*//*css para botones de navegacion*//*css para botones de navegacion*//*css para botones de navegacion*/
+/*css para botones de navegacion*//*css para botones de navegacion*//*css para botones de navegacion*//*css para botones de navegacion*//*css para botones de navegacion*/
+/*css para botones de navegacion*//*css para botones de navegacion*//*css para botones de navegacion*//*css para botones de navegacion*//*css para botones de navegacion*/
+
+.boton-conten{
+    background-color: #101820;
+    position: sticky;
+    top: 0pt;
+    width: 100%;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.boton {
+    margin: 0px 10px;
+    background-color: #101820;
+    color: #DDE3E6;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 500ms ease;
+    z-index: 0;
+    width: 15%;
+    text-decoration: none;
+    border-radius: 10px;
+
+
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        background-color: #DDE3E6;
+        transition: all 500ms ease;
+        z-index: -1;
+    }
+
+}
+
+.boton:hover{
+    -webkit-animation: shadow-pulse 1000ms 1;
+    animation: shadow-pulse 1000ms 1;
+    background-color: #DDE3E6;
+    color: #101820;
+}
+
+.boton icon{
+    margin-right: 20px;
+    color: #DDE3E6;
+}
+
+.boton icon:hover{
+    color: #101820;
+    font-size: 30px;
+}
+
 /*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*/
 /*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*/
 /*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*//*css para carrusel*/
